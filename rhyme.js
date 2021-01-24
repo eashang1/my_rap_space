@@ -245,7 +245,7 @@ function setStyle(div)
     $(div).addClass("RhymeBrainResult");
     div.style.margin = "auto";
     div.style.cssFloat = "left";
-    div.style.padding = "0.5em 0.5em 0.5em 4em";
+    div.style.padding = "0.1em 0.1em 0.1em 4em";
     div.style.width = "10em";
     div.style.textAlign = "center";
     div.style.fontFamily = "OCR A Std, monospace";
@@ -255,6 +255,8 @@ function setStyle(div)
     if ( TextColour !== null ) {
         div.style.color = TextColour;
     }
+
+    div.textAlign = "center"
 }
 
 function setH4Style(h4)
@@ -262,12 +264,10 @@ function setH4Style(h4)
     $(h4).addClass("RhymeBrainHeader");
     h4.style.clear = "both";
     h4.style.paddingTop = "1em";
-    h4.style.paddingLeft = "4em"
-    h4.style.marginBottom = "0";
-    div.style.textAlign = "center";
-    div.style.fontFamily = "OCR A Std, monospace";
-    div.style.color = "#515151";
-    div.style.fontWeight = "bold";
+    h4.style.paddingLeft = "7em"
+    h4.style.fontFamily = "OCR A Std, monospace";
+    h4.style.color = "#383838";
+    h4.style.fontWeight = "bold";
 
     if ( TextColour !== null ) {
         h4.style.color = TextColour;
