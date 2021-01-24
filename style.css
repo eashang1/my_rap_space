@@ -1,0 +1,60 @@
+html {
+  background-color: #86C0F2;
+}
+
+body {
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:0%;
+  margin-top:0%;
+  background-color: #FDB279;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.logo {
+  display: block;
+  margin-left: 30px;
+  margin-right: auto;
+  margin-bottom: 14px;
+}
+
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  text-align: center;
+  font-family: OCR A Std, monospace;
+  margin-left:12%;
+  margin-right:12%;
+  font-size: 42px
+}
+
+.cursive {
+  text-align: center;
+  font-family: OCR A Std, monospace;
+  margin-left:12%;
+  margin-right:12%;
+}
+
+.format {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
