@@ -13,158 +13,151 @@
   </head>
 
   <body>
-    <p style = "color: #FDB279", class = "cursive">
-      You should hover over the logo...
-    </p>
+      <p style="color: #FDB279" , class="cursive">
+          You should hover over the logo...
+      </p>
 
-    <!-- Title -->
-    <p style = "color: #515151", class = "title">
-      <b>
-        𝓶𝔂 𝓻𝓪𝓹 𝓼𝓹𝓪𝓬𝓮
-      </b>
-    </p>
+      <!-- Title -->
+      <p style="color: #515151" , class="title">
+          <b>
+              𝓶𝔂 𝓻𝓪𝓹 𝓼𝓹𝓪𝓬𝓮
+          </b>
+      </p>
 
-    <!-- Intro GIF and description -->
-    <img class="image" src="mfdoom.gif", height = 275, width = 222/>
+      <!-- Intro GIF and description -->
+      <img class="image" src="mfdoom.gif" , height=275, width=222 />
 
-    <p style = "color: #515151", class = "cursive">
-      <b>
-       Welcome to My Rap Space, the free online freestyle tool! Whether you're livening up the playground or chilling on the bus, just
-       enter any word to generate a list of rhyming ones below. Then drop the beat and start spitting :)
-      </b>
-    </p>
+      <p style="color: #515151" , class="cursive">
+          <b>
+              Welcome to My Rap Space, the free online freestyle tool! Whether you're livening up the playground or chilling on the bus, just
+              enter any word to generate a list of rhyming ones below. Then drop the beat and start spitting :)
+          </b>
+      </p>
 
-    <p>&nbsp;</p>
+      <p>&nbsp;</p>
 
-    <!-- Takes input and calls Rhyme Brain API -->
-    <form action="javascript:RhymeBrainSubmit()">
-      <input style="font-size:25px", type=text id="RhymeBrainInput", placeholder="Enter word here!", size = "50", class = "format">
+      <!-- Takes input and calls Rhyme Brain API -->
+      <form action="javascript:RhymeBrainSubmit()">
+          <input style="font-size:25px" , type=text id="RhymeBrainInput" , placeholder="Enter word here!" , size="50" , class="format">
 
-      <input type=submit value="Rhyme", size = "50", class = "btn">
-    </form>
+          <input type=submit value="Rhyme" , size="50" , class="btn">
+      </form>
 
-    <script type="text/javascript">
-        var RhymeBrainMaxResults = 35;
-    </script>
+      <script type="text/javascript">
+          var RhymeBrainMaxResults = 35;
+      </script>
 
-    <script type="text/javascript" src="rhyme.js"></script>
+      <script type="text/javascript" src="rhyme.js"></script>
 
-    <p>&nbsp;</p>
+      <p>&nbsp;</p>
 
-    <!-- audio player -->
-    <audio id="player" controls autoplay loop
-      src="music/music0.mp3", class = "format"
-      >
-      Your browser does not support the audio element.
-    </audio>
-
-
-    <script>
-      var audio = document.getElementById("player");
-      audio.volume = 0.15;
-    </script>
-
-    <!-- playlist -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <style> .hide { display: none; } </style>
-
-    <ul id="playlist" class="hide">
-      <li data="music/1nceagain.mp3"> 1nceagain </li>
-      <li data="music/accordion.mp3"> accordion </li>
-      <li data="music/alkaline.mp3"> alkaline </li>
-      <li data="music/astronomy.mp3"> astronomy </li>
-      <li data="music/atliens.mp3"> atliens </li>
-      <li data="music/badidea.mp3"> badidea </li>
-      <li data="music/bigfish.mp3"> bigfish </li>
-      <li data="music/birdseyeview.mp3"> birdseyeview </li>
-      <li data="music/curls.mp3"> curls </li>
-      <li data="music/deadpresidents.mp3"> deadpresidents </li>
-      <li data="music/everythingiam.mp3"> everythingiam </li>
-      <li data="music/familybusiness.mp3"> familybusiness </li>
-      <li data="music/gatdamn.mp3"> gatdamn </li>
-      <li data="music/heardemsay.mp3"> heardemsay </li>
-      <li data="music/high.mp3"> high </li>
-      <li data="music/likewater.mp3"> likewater </li>
-      <li data="music/liquidswords.mp3"> liquidswords </li>
-      <li data="music/mathematics.mp3"> mathematics </li>
-      <li data="music/nasislike.mp3"> nasislike </li>
-      <li data="music/newbody.mp3"> newbody </li>
-      <li data="music/nooneoutside.mp3"> nooneoutside </li>
-      <li data="music/oldearth.mp3"> oldearth </li>
-      <li data="music/onlychildblues.mp3"> onlychildblues </li>
-      <li data="music/papertrails.mp3"> papertrails </li>
-      <li data="music/paristokyo.mp3"> paristokyo </li>
-      <li data="music/renegade.mp3"> renegade </li>
-      <li data="music/santeria.mp3"> santeria </li>
-      <li data="music/seemenow.mp3"> seemenow </li>
-      <li data="music/simplyamazin.mp3"> simplyamazin </li>
-      <li data="music/sledom.mp3"> sledom </li>
-      <li data="music/thatsthat.mp3"> thatsthat </li>
-      <li data="music/thefood.mp3"> thefood </li>
-      <li data="music/thenarrowpath.mp3"> thenarrowpath </li>
-      <li data="music/time.mp3"> time </li>
-      <li data="music/travelinman.mp3"> travelinman </li>
-      <li data="music/welcomeback.mp3"> welcomeback </li>
-      <li data="music/woods.mp3"> woods </li>
-    </ul>
-
-    <!-- Randomize 1st Audio -->
-    <script>
-      var player = document.getElementById("player"),
-        playlist = document.getElementById("playlist");
-
-      // RNG selector
-      var list = $('ul > li');
-      list.eq(parseInt(Math.random()*list.length)).addClass('selected');
+      <!-- audio player -->
+      <audio id="player" controls autoplay loop
+             src="music/music0.mp3" , class="format">
+          Your browser does not support the audio element.
+      </audio>
 
 
-      var selected = playlist.querySelector("li.selected");
-      player.src = selected.getAttribute("data");
-    </script>
+      <script>
+          var audio = document.getElementById("player");
+          audio.volume = 0.15;
+      </script>
 
-    <!-- Next button: no repeats -->
-    <button id="next" onclick="playNext()", class = "btn">Next</button>
-    <script>
-      var player = document.getElementById("player"),
-          playlist = document.getElementById("playlist");
+      <!-- playlist -->
+      <ul id="playlist" class="hide">
+          <li data="music/1nceagain.mp3"> 1nceagain </li>
+          <li data="music/accordion.mp3"> accordion </li>
+          <li data="music/alkaline.mp3"> alkaline </li>
+          <li data="music/astronomy.mp3"> astronomy </li>
+          <li data="music/atliens.mp3"> atliens </li>
+          <li data="music/badidea.mp3"> badidea </li>
+          <li data="music/bigfish.mp3"> bigfish </li>
+          <li data="music/birdseyeview.mp3"> birdseyeview </li>
+          <li data="music/curls.mp3"> curls </li>
+          <li data="music/deadpresidents.mp3"> deadpresidents </li>
+          <li data="music/everythingiam.mp3"> everythingiam </li>
+          <li data="music/familybusiness.mp3"> familybusiness </li>
+          <li data="music/gatdamn.mp3"> gatdamn </li>
+          <li data="music/heardemsay.mp3"> heardemsay </li>
+          <li data="music/high.mp3"> high </li>
+          <li data="music/likewater.mp3"> likewater </li>
+          <li data="music/liquidswords.mp3"> liquidswords </li>
+          <li data="music/mathematics.mp3"> mathematics </li>
+          <li data="music/nasislike.mp3"> nasislike </li>
+          <li data="music/newbody.mp3"> newbody </li>
+          <li data="music/nooneoutside.mp3"> nooneoutside </li>
+          <li data="music/oldearth.mp3"> oldearth </li>
+          <li data="music/onlychildblues.mp3"> onlychildblues </li>
+          <li data="music/papertrails.mp3"> papertrails </li>
+          <li data="music/paristokyo.mp3"> paristokyo </li>
+          <li data="music/renegade.mp3"> renegade </li>
+          <li data="music/santeria.mp3"> santeria </li>
+          <li data="music/seemenow.mp3"> seemenow </li>
+          <li data="music/simplyamazin.mp3"> simplyamazin </li>
+          <li data="music/sledom.mp3"> sledom </li>
+          <li data="music/thatsthat.mp3"> thatsthat </li>
+          <li data="music/thefood.mp3"> thefood </li>
+          <li data="music/thenarrowpath.mp3"> thenarrowpath </li>
+          <li data="music/time.mp3"> time </li>
+          <li data="music/travelinman.mp3"> travelinman </li>
+          <li data="music/welcomeback.mp3"> welcomeback </li>
+          <li data="music/woods.mp3"> woods </li>
+      </ul>
 
-      function playNext() {
-        var tempRemove = playlist.querySelector("li.selected");
-        tempRemove.classList.remove("selected");
-        playlist.removeChild(tempRemove);
+      <!-- Randomize 1st Audio -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        // RNG selector //
-        var list = $('ul > li');
-        list.eq(parseInt(Math.random() * (list.length - 1))).addClass('selected');
+      <script>
+          var player = document.getElementById("player"),
+              playlist = document.getElementById("playlist");
 
-        var selected = playlist.querySelector("li.selected");
-        player.src = selected.getAttribute("data");
+          selectRandom();
 
-        playlist.appendChild(tempRemove);
-      }
-    </script>
+          // RNG selector
+          function selectRandom() {
+              var list = $('ul > li');
+              list.eq(parseInt(Math.random() * list.length)).addClass('selected');
 
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
 
-    <p style = "color: #FDB279", class = "cursive">
-       ...and click ctrl + shift + j!
-    </p>
+              var selected = playlist.querySelector("li.selected");
+              player.src = selected.getAttribute("data");
+          }
+      </script>
 
-    <!-- Logo image -->
-    <img onMouseOver="display()", class="logo" src="favicon.png", height = 25, width = 25, id = "logo"/>
+      <!-- Next button: no repeats -->
+      <button id="next" onclick="playNext()" , class="btn">Next</button>
+      <script>
+          function playNext() {
+              var tempRemove = playlist.querySelector("li.selected");
+              tempRemove.classList.remove("selected");
+              playlist.removeChild(tempRemove);
 
-    <script>
-      function display() {
-          console.log("Thanks for checking out the site! We hope you've had a... rapturous experience ~ KDE (January 24, 2021)")
-      }
-    </script>
-    <p>&nbsp;</p>
+              selectRandom();
+
+              playlist.appendChild(tempRemove);
+          }
+      </script>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+      <p style="color: #FDB279" , class="cursive">
+          ...and click ctrl + shift + j!
+      </p>
+
+      <!-- Logo image -->
+      <img onMouseOver="display()" , class="logo" src="favicon.png" , height=25, width=25, id="logo" />
+
+      <script>
+          function display() {
+              console.log("Thanks for checking out the site! We hope you've had a... rapturous experience ~ KDE (January 24, 2021)")
+          }
+      </script>
+      <p>&nbsp;</p>
   </body>
 
 </html>
