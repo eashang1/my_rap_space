@@ -1,2 +1,7 @@
 # My Rap Space
-Welcome to My Rap Space, the free online freestyle tool! Whether you're livening up the playground or chilling on the bus, just enter any word to generate a list of rhyming ones below. Then drop the beat and start spitting. Try it at myrap.space today!
+An online freestyle rap tool created using the RhymeBrain API
+ - See [here](https://devpost.com/software/my-rap-space) for more information
+ - Click [here](myrap.space) or go to myrap.space to try it now
+
+![image](https://user-images.githubusercontent.com/53799135/122690341-f2c3a480-d1f6-11eb-9570-94f018459c1b.png)
+
