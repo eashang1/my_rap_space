@@ -53,10 +53,13 @@
     <p>&nbsp;</p>
 
     <!-- audio player -->
-    <audio id="player" controls autoplay loop
-            src="music/music0.mp3" , class="format">
-        Your browser does not support the audio element.
-    </audio>
+    <div class="rhyme-container">
+        <audio id="player" controls autoplay loop
+                src="music/music0.mp3" , class="format">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="next" onclick="playNext()" , class="btn">Next</button>
+    </div>
 
 
     <script>
@@ -212,7 +215,6 @@
     </script>
 
     <!-- Next button: no repeats -->
-    <button id="next" onclick="playNext()" , class="btn">Next</button>
     <script>
         function playNext() {
             var tempRemove = playlist.querySelector("li.selected");
