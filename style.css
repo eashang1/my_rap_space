@@ -8,7 +8,7 @@ body {
   margin-bottom:0%;
   margin-top:0%;
   background-color: #FDB279;
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 25px;
 }
 
 .logo {
@@ -27,7 +27,8 @@ body {
 
 .title {
   text-align: center;
-  font-family: OCR A Std, monospace;
+  color: #515151;
+  font-family: OCR A Std,"Courier", "Courier New", "Lucida Console", monospace;
   margin-left:12%;
   margin-right:12%;
   font-size: 42px
@@ -35,22 +36,62 @@ body {
 
 .cursive {
   text-align: center;
-  font-family: OCR A Std, monospace;
+  color: #515151;
+  font-family: OCR A Std,"Courier", "Courier New", "Lucida Console", monospace;
   margin-left:12%;
   margin-right:12%;
+  font-size:15px;
+}
+
+.rhyme-container {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  max-width: 85%;
+
+}
+
+.textbar {
+  width: 600px;
+  max-width: 100%;
+  font-size:20px;
+  color: #515151;
+  font-weight: bold;
+  background-color: whitesmoke;
+  border: #515151 2px solid;
+  border-radius: 5px;
+  font-family: OCR A Std,"Courier", "Courier New", "Lucida Console", monospace;
 }
 
 .format {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  max-width: 85%;
 }
 
 .btn {
   display: block;
+  padding: 5px 20px;
+  font-weight: bold;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 15px
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size:20px;
+  background-color: whitesmoke;
+  color: #515151;
+  border-radius: 10px;
+  border: #515151 2px solid;
+  font-family: OCR A Std,"Courier", "Courier New", "Lucida Console", monospace;
+}
+
+.btn:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #86C0F2;
+  transform: scale(1.04);
 }
 
 .center {

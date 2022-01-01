@@ -14,12 +14,12 @@
 </head>
 
   <body>
-    <p style="color: #FDB279" , class="cursive">
+    <p style="color: #FDB279" class="cursive">
         You should hover over the logo...
     </p>
 
     <!-- Title -->
-    <p style="color: #515151" , class="title">
+    <p class="title">
         <b>
             𝓶𝔂 𝓻𝓪𝓹 𝓼𝓹𝓪𝓬𝓮
         </b>
@@ -28,7 +28,7 @@
     <!-- Intro GIF and description -->
     <img class="image" src="mfdoom.gif" , height=275, width=222 />
 
-    <p style="color: #515151" , class="cursive">
+    <p class="cursive">
         <b>
             Welcome to My Rap Space, the free online freestyle tool! Whether you're livening up the playground or chilling on the bus, just
             enter any word to generate a list of rhyming ones below. Then drop the beat and start spitting :)
@@ -38,14 +38,14 @@
     <p>&nbsp;</p>
 
     <!-- Takes input and calls RhymeBrain API -->
-    <form action="javascript:RhymeBrainSubmit()">
-        <input style="font-size:25px" , type=text id="RhymeBrainInput" , placeholder="Enter word here!" , size="50" , class="format">
+    <form class="rhyme-container" action="javascript:RhymeBrainSubmit()">
+        <input class="textbar" type=text id="RhymeBrainInput" placeholder="Enter word here!" class="format">
 
-        <input type=submit value="Rhyme" , size="50" , class="btn">
+        <input type=submit value="Rhyme" class="btn">
     </form>
 
     <script type="text/javascript">
-        var RhymeBrainMaxResults = 35;
+        var RhymeBrainMaxResults = 20;
     </script>
 
     <script type="text/javascript" src="rhyme.js"></script>

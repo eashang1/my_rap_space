@@ -244,11 +244,11 @@ function setStyle(div)
 {
     $(div).addClass("RhymeBrainResult");
     div.style.margin = "auto";
-    div.style.cssFloat = "left";
-    div.style.padding = "0.1em 0.1em 0.1em 4em";
-    div.style.width = "10em";
+    div.style.display = "inline-block";
+    div.style.padding = "0.1em 0.1em 0.1em 3em";
+    div.style.width = "10.5em";
     div.style.textAlign = "center";
-    div.style.fontFamily = "OCR A Std, monospace";
+    div.style.fontFamily = "OCR A Std,Courier, Courier New, Lucida Console, monospace";
     div.style.color = "#515151";
     div.style.fontWeight = "bold"
 
@@ -256,7 +256,7 @@ function setStyle(div)
         div.style.color = TextColour;
     }
 
-    div.textAlign = "center"
+    div.textAlign = "center";
 }
 
 function setH4Style(h4)
@@ -264,7 +264,8 @@ function setH4Style(h4)
     $(h4).addClass("RhymeBrainHeader");
     h4.style.clear = "both";
     h4.style.paddingTop = "1em";
-    h4.style.paddingLeft = "7em"
+    h4.style.paddingLeft = "3em"
+    h4.style.paddingRight = "3em"
     h4.style.fontFamily = "OCR A Std, monospace";
     h4.style.color = "#383838";
     h4.style.fontWeight = "bold";
@@ -280,10 +281,6 @@ function display(words, div)
     resultDiv.empty();
 
     var i;
-
-    if ( words.length === 0 ) {
-        resultDiv.text("No rhymes were found.");
-    }
 
     var highest;
     var wordclass = "wordpanel";
