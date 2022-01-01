@@ -1,7 +1,7 @@
 # My Rap Space
 An online freestyle rap tool created using the RhymeBrain API
- - See [here](https://devpost.com/software/my-rap-space) for more information
- - Go to myrap.space to try it now
+ - See the Hack@Brown submission [here](https://devpost.com/software/my-rap-space) for more information
+ - Go to [myrap.space](http://myrap.space) to try it now! Instrumentals will be added frequently.
 
-![image](https://user-images.githubusercontent.com/53799135/122690341-f2c3a480-d1f6-11eb-9570-94f018459c1b.png)
+![image](https://github.com/eashang1/my_rap_space/blob/main/images/home.png?raw=true)
 
